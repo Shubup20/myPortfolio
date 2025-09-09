@@ -30,20 +30,6 @@ body{
   width: 100%;
 }
 
-/* Sidebar styling */
-.sidebar {
-  background: linear-gradient(180deg, #000000, #1f2937); /* black to gray */
-  color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  } 
-
 /* Main section styling */
 .main-content {
   background: white;

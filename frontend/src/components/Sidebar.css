@@ -1,3 +1,4 @@
+
 /* Profile Section */
 .profile {
   text-align: center;
@@ -80,4 +81,65 @@ font-family: 'Raleway', sans-serif;
 .nav-links a.active svg {
   color: #149ddd; /* icon blue */
 }
+/* Sidebar default (desktop) */
+.sidebar {
+  background: linear-gradient(180deg, #000000, #1f2937);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: transform 0.8s ease-in-out;
+}
 
+/* Mobile & tablet view */
+@media (max-width: 1250px) {
+  .sidebar {
+    position: fixed;       /* override sticky */
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    transform: translateX(-100%); /* keep hidden */
+    z-index: 1000;
+   transition: transform 0.8s ease-in-out;
+  }
+
+  /* When sidebar is open */
+  .sidebar.open {
+    transform: translateX(0); /* slide in */
+  }
+}
+
+/* Toggle button */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #149ddd;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 1101; /* must be above sidebar */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .menu-toggle:hover {
+    background: #0f7bbf;
+  }
+}
