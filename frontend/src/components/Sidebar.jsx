@@ -20,6 +20,7 @@ import profileImg from "/shub.jpg"; // put your image in public folder
 
 const Sidebar = () => {
   return (
+    <>
     <aside className="sidebar">
       {/* Profile Section */}
       <div className="profile">
@@ -29,20 +30,20 @@ const Sidebar = () => {
 
       {/* Social Icons */}
       <div className="social-icons">
-        <a href="#">
-          <FaXTwitter />
-        </a>
-        <a href="#">
-          <FaFacebookF />
-        </a>
-        <a href="#">
-          <FaInstagram />
-        </a>
-        <a href="http://github.com/Shubup20" target="_blank" rel="noreferrer">
+         <a href="http://github.com/Shubup20" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>
         <a href="https://www.linkedin.com/in/shubup20" target="_blank" rel="noreferrer">
           <FaLinkedinIn />
+        </a>
+        <a href="https://x.com/shub1108?t=uPzrgv-lFjxD_LWJ-7d-iA&s=09" target="_blank" rel="noreferrer">
+          <FaXTwitter />
+        </a>
+        <a href="https://www.facebook.com/shubham.chauhan.94801116" target="_blank" rel="noreferrer">
+          <FaFacebookF />
+        </a>
+        <a href="#">
+          <FaInstagram />
         </a>
       </div>
 
@@ -71,6 +72,7 @@ const Sidebar = () => {
         </NavLink>
       </nav>
     </aside>
+    </>
   );
 };
 
