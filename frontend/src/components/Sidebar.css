@@ -62,12 +62,21 @@
   transition: all 0.3s ease;
 }
 
-.nav-links a.active,
+
+/* Hover state */
 .nav-links a:hover {
-  color: #fff; /* text turns white */
+  color: #fff; /* text white */
 }
 
-.nav-links a.active,
 .nav-links a:hover svg {
-  color: #149ddd; /* icon turns blue */
+  color: #149ddd; /* icon blue */
+}
+
+/* Active state */
+.nav-links a.active {
+  color: #fff; /* text white */
+}
+
+.nav-links a.active svg {
+  color: #149ddd; /* icon blue */
 }
