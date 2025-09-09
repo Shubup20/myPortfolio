@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import "./Home.css";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <section className="home">
+      <div className="home-content">
+        <h1>Shubham Chauhan</h1>
+        <h2>
+          I a'm <span className="typing">Full Stack Developer</span>
+        </h2>
+      </div>
+    </section>
+  );
+};
 
-export default Home
+export default Home;

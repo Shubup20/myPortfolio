@@ -1,0 +1,64 @@
+.home {
+  display: flex;
+  justify-content: flex-start; /* left side */
+  align-items: center;         /* vertical center */
+  height: 100vh;               /* full screen */
+  padding-left: 2rem;          /* adjust spacing from left */
+  background: url("profile.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+
+.home-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.home-content h2 {
+  font-size:2rem;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.typing {
+  border-right: 3px solid #149ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: typing 6s steps(20, end) infinite, blink 0.7s step-end infinite;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #149ddd;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+}
+
+/* Typing effect */
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  25% {
+    width: 4ch; /* Full */
+  }
+  50% {
+    width: 10ch;
+  }
+  75% {
+    width: 19ch; /* Full length of "Full Stack Developer" */
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+/* Cursor blinking */
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #149ddd;
+  }
+}
