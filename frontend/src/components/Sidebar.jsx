@@ -15,9 +15,10 @@ import {
   FaTimes,
   FaEnvelope,
 } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
 
 import "./Sidebar.css"; // Import the CSS file for styling
-import profileImg from "/shub.jpg"; // put your image in public folder
+import profileImg from "../assets/shubAbout.jpg"; // put your image in public folder
 import { useState } from "react";
 
 const Sidebar = () => {
@@ -74,6 +75,9 @@ const Sidebar = () => {
           <NavLink to="/about">
             <FaUser size={24} /> About
           </NavLink>
+          <NavLink to="/skills">
+            <GiSkills size={24} /> Skills
+          </NavLink>
           <NavLink to="/resume">
             <FaFileAlt size={24} /> Resume
           </NavLink>
@@ -82,9 +86,6 @@ const Sidebar = () => {
           </NavLink>
           <NavLink to="/services">
             <FaBars size={24} /> Services
-          </NavLink>
-          <NavLink to="/dropdown">
-            <FaFileAlt size={24} /> Dropdown
           </NavLink>
           <NavLink to="/contact">
             <FaEnvelope size={24} /> Contact
