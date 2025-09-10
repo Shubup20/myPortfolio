@@ -36,3 +36,14 @@ body{
   overflow-y: auto;
   height: 100vh;
 }
+
+/* ============ Responsive Fix ============ */
+@media screen and (max-width: 1250px) {
+  .app-container {
+    grid-template-columns: 1fr; /* Full width for content */
+  }
+
+  .main-content {
+    width: 100%;
+  }
+}
