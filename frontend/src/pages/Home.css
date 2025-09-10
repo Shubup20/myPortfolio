@@ -1,9 +1,10 @@
 .home {
   display: flex;
   justify-content: flex-start; /* left side */
-  align-items: center;         /* vertical center */
-  height: 100vh;               /* full screen */
-  padding-left: 2rem;          /* adjust spacing from left */
+  align-items:center; /* vertical center */
+  height: 100vh; /* full screen */
+  padding-left: 2rem; /* adjust spacing from left */
+  padding-top: 40rem;
   background: url("profile.jpg") no-repeat center center/cover;
   color: #fff;
 }
@@ -15,8 +16,7 @@
 }
 
 .home-content h2 {
-  font-size:2rem;
-  margin-top: 10px;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -55,10 +55,37 @@
 
 /* Cursor blinking */
 @keyframes blink {
-  from, to {
+  from,
+  to {
     border-color: transparent;
   }
   50% {
     border-color: #149ddd;
   }
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: row;
+  gap:0.6rem;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.skill-item p {
+  font-size: 1rem;
+  font-weight: 700;
 }
