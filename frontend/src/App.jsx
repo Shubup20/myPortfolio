@@ -6,12 +6,13 @@ import Loader from "./components/Loader";
 // Lazy loading pages
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
+const Skills = lazy(() => import("./pages/Skills"));
 const Resume = lazy(() => import("./pages/Resume"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const Services = lazy(() => import("./pages/Services"));
 const Contact = lazy(() => import("./pages/Contact"));
 
-const App =() => {
+const App = () => {
   return (
     <div className="app-container">
       {/* Fixed Sidebar */}
@@ -23,6 +24,7 @@ const App =() => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/services" element={<Services />} />
@@ -32,6 +34,6 @@ const App =() => {
       </div>
     </div>
   );
-}
+};
 
 export default App;
