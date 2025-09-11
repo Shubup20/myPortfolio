@@ -1,0 +1,110 @@
+.resume-section {
+  min-height: 100vh;           /* take full viewport height */
+  display: flex;               /* enable flexbox */
+  flex-direction: column;      /* stack content vertically */
+  justify-content: center;     /* center vertically */        /* center horizontally */
+  padding: 2rem 1.5rem;
+  background: #fff;
+  color: #111;
+}
+
+.resume-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  position: relative;
+}
+
+.resume-title::after {
+  content: "";
+  display: block;
+  width: 5.5rem;
+  height: 2px;
+  background: #0078ff;
+  margin-top: 0.5rem;
+}
+
+.resume-intro {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.resume-subtitle {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #0078ff;
+}
+
+.resume-item {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #0078ff;
+}
+
+.resume-item h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.resume-item h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #0078ff;
+  margin-bottom: 0.5rem;
+}
+
+.resume-item p,
+.resume-item ul {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.resume-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resume-item ul li {
+  margin-bottom: 0.25rem;
+}
+
+/* Download button */
+.resume-download {
+  margin-top: 2rem;
+  display: flex;            /* enable flexbox */
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically if needed */
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #0078ff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-download:hover {
+  background: #005fcc;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+}
