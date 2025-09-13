@@ -26,7 +26,7 @@
   overflow: hidden;
   display: inline-block;
   vertical-align: bottom;
-  animation: typing 6s steps(20, end) infinite, blink 0.7s step-end infinite;
+  animation: typing 4s steps(20, end) infinite, blink 0.7s step-end infinite;
   color: white;
   text-decoration: underline;
   text-decoration-color: #149ddd;

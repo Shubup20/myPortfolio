@@ -1,0 +1,127 @@
+.portfolio {
+  padding:5rem 2rem;
+  background: #f5f9fc; 
+}
+
+.portfolio-title {
+   font-size: 2.5rem;
+  font-weight: bold;
+  color: #111;
+  position: relative;
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.3rem;
+  text-align: left;
+  display: inline-block;
+}
+
+
+.portfolio-title::after {
+  content: "";
+  position: absolute;
+  left: 0;  /* underline starts from left */
+  bottom: 0;
+  width: 5.5rem;   /* length of underline */
+  height: 0.3rem;   /* thickness */
+  background-color: #007bff; /* blue color */
+}
+
+.portfolio-subtext {
+  text-align: left;
+  margin-bottom: 3rem;
+  color: #666;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.filter-buttons button {
+  margin: 0 1rem;
+  padding: 0.752rem 1.755rem;
+  background: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.portfolio-item img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay .category {
+  background: #007bff;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.portfolio-overlay h3 {
+  margin-bottom: 15px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: #007bff;
+}
