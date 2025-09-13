@@ -1,0 +1,88 @@
+.services {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.75rem 2.5rem;
+}
+
+/* Title with underline (same style as Portfolio) */
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+  position: relative;
+  padding-bottom: 0.625rem;
+  margin-bottom: 0.9375rem;
+  text-align: left;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 4.75rem;
+  height: 0.1875rem;
+  background-color: #007bff;
+}
+
+.section-subtext {
+  text-align: left;
+  margin-bottom: 7rem;
+  color: #666;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Service Box */
+.service-box {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.service-icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  background: #007bff;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+}
+
+.service-box h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.service-box p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
