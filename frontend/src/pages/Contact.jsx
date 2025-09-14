@@ -47,7 +47,7 @@ const Contact = () => {
             <FaMapMarkerAlt className="info-icon" />
             <div>
               <h3>Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>street No. D-5, Himalayan colony,shekhpur Gaddu ,najibabad dist. bijnor U.P pin(246763)</p>
             </div>
           </div>
 
@@ -55,7 +55,7 @@ const Contact = () => {
             <FaPhoneAlt className="info-icon" />
             <div>
               <h3>Call Us</h3>
-              <p>+91 90844 37075</p>
+              <p>+91 6396337325</p>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ const Contact = () => {
           <div className="map-box">
             <iframe
               title="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.889534189343!2d-74.00601538459384!3d40.71277597933021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a31621b3e29%3A0xbaaed5a5a67e3f3f!2sNew%20York!5e0!3m2!1sen!2sus!4v1616582272348!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d909.4385943919788!2d78.34175670968294!3d29.595183499497008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390bdeff0371d465%3A0x8ccfc25f16874dd!2sHimalayan%20Colony%2C%20Chhapar%2C%20Najibabad%2C%20Uttar%20Pradesh%20246763!5e1!3m2!1sen!2sin!4v1757833376198!5m2!1sen!2sin"
               width="100%"
               height="200"
               style={{ border: "0" }}
