@@ -15,10 +15,10 @@ import app from "./app.js";
     // Start Server only if DB succeeds
     const PORT = process.env.PORT || 5000;
     app.listen(PORT, () => {
-      console.log(`✅ Server running on http://localhost:${PORT}`);
+      console.log(`Server running on http://localhost:${PORT}`);
     });
   } catch (error) {
-    console.error("❌ Startup Error:", error.message);
+    console.error("Startup Error:", error.message);
     process.exit(1); // Exit the app on any startup error
   }
 })();
