@@ -7,18 +7,15 @@ import {
   deleteProject,
 } from "../controllers/projectController.js";
 
-const router = express.Router();
+const projectRouter = express.Router();
 
 // GET all projects
-router.get("/", getProjects);
+projectRouter.route("/").get(getProjects).post(createProject);
 
-// POST new project
-router.post("/", createProject);
+// PUT update project && DELETE project
+projectRouter
+  .route("/:id")
+  .router.put("/:id", updateProject)
+  .delete("/:id", deleteProject);
 
-// PUT update project
-router.put("/:id", updateProject);
-
-// DELETE project
-router.delete("/:id", deleteProject);
-
-export default router;
+export default projectRouter;

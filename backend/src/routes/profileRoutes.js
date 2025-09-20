@@ -10,23 +10,29 @@ import {
   deleteSocialLink,
 } from "../controllers/profileController.js";
 
-import limiter from "../middleware/limiter.js";   // ✅ use middleware
-import upload from "../config/multer.js";         // ✅ use config
+import limiter from "../middleware/limiter.js"; // ✅ use middleware
+import upload from "../config/multer.js"; // ✅ use config
 
-const router = express.Router();
+const profileRouter = express.Router();
 
 // Routes
-router.get("/", limiter, getProfile);
-router.put("/", limiter, updateProfile);
-router.post("/upload", limiter, upload.single("image"), uploadImage);
-router.delete("/image", limiter, deleteImage);
 
-router.patch(
-  "/social",
-  limiter,
-  [body("key").isString(), body("url").isURL()],
-  patchSocialLink
-);
-router.delete("/social", limiter, deleteSocialLink);
+// Profile (GET + PUT on "/")
+profileRouter.route("/").get(limiter, getProfile).put(limiter, updateProfile);
 
-export default router;
+// Image upload & delete
+profileRouter
+  .route("/upload")
+  .post(limiter, upload.single("image"), uploadImage)
+  .delete("/upload", limiter, deleteImage);
+// Social links (PATCH + DELETE on "/social")
+profileRouter
+  .route("/social")
+  .patch(
+    limiter,
+    [body("key").isString(), body("url").isURL()],
+    patchSocialLink
+  )
+  .delete(limiter, deleteSocialLink);
+
+export default profileRouter;
