@@ -15,7 +15,7 @@ app.use("/api/projects", projectRoutes);
 
 // Test Route
 app.get("/", (req, res) => {
-  res.send("🚀 Express API is working!");
+  res.send("Express API is working!");
 });
 
 export default app;
