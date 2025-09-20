@@ -18,7 +18,6 @@ const router = express.Router();
 // Routes
 router.get("/", limiter, getProfile);
 router.put("/", limiter, updateProfile);
-
 router.post("/upload", limiter, upload.single("image"), uploadImage);
 router.delete("/image", limiter, deleteImage);
 
