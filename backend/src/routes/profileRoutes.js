@@ -24,7 +24,8 @@ profileRouter.route("/").get(limiter, getProfile).put(limiter, updateProfile);
 profileRouter
   .route("/upload")
   .post(limiter, upload.single("image"), uploadImage)
-  .delete("/upload", limiter, deleteImage);
+  .delete(limiter, deleteImage);
+  
 // Social links (PATCH + DELETE on "/social")
 profileRouter
   .route("/social")

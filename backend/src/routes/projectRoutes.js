@@ -15,7 +15,7 @@ projectRouter.route("/").get(getProjects).post(createProject);
 // PUT update project && DELETE project
 projectRouter
   .route("/:id")
-  .router.put("/:id", updateProject)
-  .delete("/:id", deleteProject);
+  .put(updateProject)
+  .delete(deleteProject);
 
 export default projectRouter;
