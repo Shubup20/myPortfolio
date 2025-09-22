@@ -1,4 +1,4 @@
-import Message from "./models/Message.js";
+import Message from "../models/Message.js";
 import transporter from "../config/email.js";
 
 // POST: send and save message
