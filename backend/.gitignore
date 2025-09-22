@@ -19,3 +19,6 @@ yarn-error.log*
 # OS / editor junk files
 .DS_Store
 Thumbs.db
+
+#folder for uploaded files
+uploads/
