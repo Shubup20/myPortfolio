@@ -1,13 +1,12 @@
 import dotenv from "dotenv";
+dotenv.config();
+
 import connectDB from "./config/db.js";
 import app from "./app.js";
 
 // Async IIFE for startup
 (async () => {
   try {
-    // Load environment variables
-    dotenv.config();
-
     // Connect Database (if fails, catch block will handle it)
     await connectDB();
     console.log("✅ MongoDB Connected");

@@ -6,7 +6,7 @@ const limiter = rateLimit({
   max: 30, // 30 requests per minute
   standardHeaders: true,
   legacyHeaders: false,
-  message: { message: "Too many requests, slow down ⏳" },
+  message: { message: "Too many requests, slow down" },
 });
 
 export default limiter;
